@@ -1,4 +1,5 @@
 import React from 'react'
+import ImageCard from './ImageCard'
 
 function PlacesToVisit() {
   return (
@@ -7,14 +8,12 @@ function PlacesToVisit() {
 
     <div className='grid grid-rows-2 grid-cols-1 gap-7 m-12 min-[444px]:grid-cols-2 sm:grid-cols-3 '>
       
-      <div className='max-w-96 hover:-translate-y-5 hover:opacity-80 cursor-pointer'>
-        
-        <img src="pexels-palumalerba-2426565 (1).jpg" 
-        alt=""
-        className='rounded-2xl'
-         />
+  <ImageCard 
+  url={"pexels-palumalerba-2426565 (1).jpg"}
+  title={'Palumalerba Temple'}
+  />
 
-      </div>
+
 
       
       <div className='max-w-96 hover:-translate-y-5 hover:opacity-80 cursor-pointer'>
