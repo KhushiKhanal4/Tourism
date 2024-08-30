@@ -8,7 +8,7 @@ function ImageCard(
 ) {
 
   return (
-    <div className='max-w-96 hover:-translate-y-5 hover:filter  hover:grayscale  cursor-pointer relative group'>
+    <div className='max-w-72 min-[410px]:ml-6  lg:ml-9 xl:ml-20 hover:-translate-y-5 hover:filter  hover:grayscale  cursor-pointer relative group'>
     <img 
       src={url}
       alt=""

@@ -3,7 +3,7 @@ import React from 'react'
 function Home() {
     return (
         <>
-            <div className="relative">
+            <div className="relative bg-gray-300">
                 <video autoPlay loop muted className="">
                     <source src="vdo.mp4" type="video/mp4" />
                 </video>

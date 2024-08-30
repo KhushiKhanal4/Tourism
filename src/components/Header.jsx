@@ -12,7 +12,7 @@ function Header() {
                     <Link to="/" className="flex items-center">
                         <img
                             src="./logo.jpg"
-                            className="mr-3 w-14 rounded-full"
+                            className="mr-3 w-20 rounded-full"
                             alt="Logo"
                         />
                     </Link>

@@ -3,8 +3,8 @@ import ImageCard from './ImageCard'
 
 function PlacesToVisit() {
   return (
-   <div>
-    <h1 className='mx-4 my-5 text-3xl text-center font-bold'>Top Destinations</h1>
+   <div className=' px-5'>
+    <h1 className='mx-4 my-5 text-3xl text-center font-bold '>Top Destinations</h1>
 
     <div className='grid grid-rows-2 grid-cols-1 gap-7 m-12 min-[444px]:grid-cols-2 sm:grid-cols-3 '>
       
