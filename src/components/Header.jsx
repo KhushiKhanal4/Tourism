@@ -12,7 +12,7 @@ function Header() {
                     <Link to="/" className="flex items-center">
                         <img
                             src="./logo.jpg"
-                            className="mr-3 w-20 rounded-full"
+                            className="mr-3 w-14 rounded-full"
                             alt="Logo"
                         />
                     </Link>
@@ -56,6 +56,7 @@ function Header() {
 
                             <li>
                                 <NavLink
+                                to="/Stay"
                                     className={() =>
                                         `block py-2 px-3 rounded-lg duration-200 border-b  border-gray-100 hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 md:p-0`
                                     }
@@ -66,6 +67,8 @@ function Header() {
 
                             <li>
                                 <NavLink
+                                to="/ContactUs"
+
                                     className={() =>
                                         `block py-2 px-3 rounded-lg duration-200 border-b  border-gray-100 hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 md:p-0`
                                     }

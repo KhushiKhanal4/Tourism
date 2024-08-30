@@ -12,59 +12,26 @@ function PlacesToVisit() {
   url={"pexels-palumalerba-2426565 (1).jpg"}
   title={'Palumalerba Temple'}
   />
-
-
-
-      
-      <div className='max-w-96 hover:-translate-y-5 hover:opacity-80 cursor-pointer'>
-        
-        <img src="pexels-oidonnyboy-3658663.jpg" 
-        alt=""
-        className='rounded-2xl'
-         />
-
-      </div 
-      >
-      
-      <div className='max-w-96 hover:-translate-y-5 hover:opacity-80 cursor-pointer'>
-        
-        <img src="pexels-joe-fikar-799933673-19137460.jpg" 
-        alt=""
-        className='rounded-2xl'
-         />
-
-      </div>
-
-      
-      <div className='max-w-96 hover:-translate-y-5 hover:opacity-80 cursor-pointer'>
-        
-        <img src="pexels-freestockpro-2166559.jpg" 
-        alt=""
-        className='rounded-2xl'
-         />
-
-      </div>
-
-      
-      <div className='max-w-96 hover:-translate-y-5 hover:opacity-80 cursor-pointer'>
-        
-        <img src="pexels-freestockpro-2144326.jpg" 
-        alt=""
-        className='rounded-2xl'
-         />
-
-      </div>
-
-      
-      <div className='max-w-96 hover:-translate-y-5 hover:opacity-80 cursor-pointer'>
-        
-        <img src="pexels-timrael-2474689.jpg" 
-        alt=""
-        className='rounded-2xl'
-         />
-
-      </div>
-
+  <ImageCard 
+  url={"pexels-oidonnyboy-3658663.jpg"}
+  title={'Sekumpul Waterfall'}
+  />
+  <ImageCard 
+  url={"pexels-joe-fikar-799933673-19137460.jpg"}
+  title={'Diamond Beach, Nusa Penida'}
+  />
+  <ImageCard 
+  url={"pexels-freestockpro-2166559.jpg"}
+  title={'Pura Ulun Danu Bratan'}
+  />
+  <ImageCard 
+  url={"pexels-freestockpro-2144326.jpg"}
+  title={'Bali Handara Gate'}
+  />
+  <ImageCard 
+  url={"pexels-timrael-2474689.jpg"}
+  title={'Nusa Penida'}
+  />
 
     </div>
    </div>

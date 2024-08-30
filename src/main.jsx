@@ -5,12 +5,16 @@ import { RouterProvider,createBrowserRouter, createRoutesFromElements, Route } f
 import Root from './Root'
 import Home from './components/Home'
 import PlacesToVisit from './components/PlacesToVisit'
+import Stay from './components/Stay'
+import ContactUs from './components/ContactUs'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Root />}>
-      <Route path='' element={<Home/>}></Route>
+     <Route index element={<Home />} /> 
       <Route path='PlacesToVisit' element={<PlacesToVisit/>}></Route>
+      <Route path='Stay' element={<Stay />}></Route>
+      <Route path='ContactUs' element={<ContactUs/>}></Route>
     </Route>
   )
 )

@@ -9,7 +9,7 @@ function Home() {
                 </video>
                 <div className='absolute z-10 top-1/3 md:top-1/2 left-1/2 flex flex-wrap justify-center justify-items-center mx-auto items-center gap-2 '>
 
-                    <h1 className='text-white font-bold text-xl font-Kanit text-center pr-1 sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl'>Adventure Awaits at Every Corner</h1>
+                    <h1 className='text-white text-shadow-xl font-bold text-xl font-Kanit text-center pr-1 sm:text-2xl md:text-3xl lg:text-5xl xl:text-7xl'>Adventure Awaits at Every Corner</h1>
 
                 </div>
 
