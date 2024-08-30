@@ -7,14 +7,16 @@ import Home from './components/Home'
 import PlacesToVisit from './components/PlacesToVisit'
 import Stay from './components/Stay'
 import ContactUs from './components/ContactUs'
+import Location from './components/Location'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Root />}>
-     <Route index element={<Home />} /> 
+     <Route path='' element={<Home />} /> 
       <Route path='PlacesToVisit' element={<PlacesToVisit/>}></Route>
       <Route path='Stay' element={<Stay />}></Route>
       <Route path='ContactUs' element={<ContactUs/>}></Route>
+      <Route path='location/:locationid' element={<Location/>}></Route>
     </Route>
   )
 )

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
-        <footer>
-            <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <footer className='border border-gray-200 shadow-lg'>
+            <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
@@ -25,12 +25,12 @@ function Footer() {
                                     </Link>
                                 </li>
                                 <li className="mb-4">
-                                    <Link to="/Places-to-visit" className="hover:underline">
+                                    <Link to="/PlacesToVisit" className="hover:underline">
                                         Explore
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/Places-to-visit" className="hover:underline">
+                                    <Link to="/Stay" className="hover:underline">
                                         Stay
                                     </Link>
                                 </li>
