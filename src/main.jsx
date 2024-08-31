@@ -5,7 +5,7 @@ import { RouterProvider,createBrowserRouter, createRoutesFromElements, Route } f
 import Root from './Root'
 import Home from './components/Home'
 import PlacesToVisit from './components/PlacesToVisit'
-import Stay from './components/Stay'
+import Weather, { weatherInfoLoader } from './components/Weather'
 import ContactUs from './components/ContactUs'
 import Location from './components/Location'
 
@@ -14,7 +14,11 @@ const router = createBrowserRouter(
     <Route path='/' element={<Root />}>
      <Route path='' element={<Home />} /> 
       <Route path='PlacesToVisit' element={<PlacesToVisit/>}></Route>
-      <Route path='Stay' element={<Stay />}></Route>
+      <Route 
+      loader={weatherInfoLoader}
+      path='Weather' 
+      element={<Weather />}
+      ></Route>
       <Route path='ContactUs' element={<ContactUs/>}></Route>
       <Route path='location/:locationid' element={<Location/>}></Route>
     </Route>

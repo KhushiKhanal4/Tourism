@@ -56,12 +56,12 @@ function Header() {
 
                             <li>
                                 <NavLink
-                                to="/Stay"
+                                to="/Weather"
                                     className={() =>
                                         `block py-2 px-3 rounded-lg duration-200 border-b  border-gray-100 hover:bg-gray-200 lg:hover:bg-transparent lg:border-0 hover:text-orange-600 md:p-0`
                                     }
                                 >
-                                   Stay
+                                   Weather
                                 </NavLink>
                             </li>
 
