@@ -3,6 +3,9 @@ import React from 'react'
 import { useLoaderData } from 'react-router-dom'
 import Weatherdetails from './Weatherdetails'
 import { LuWind } from 'react-icons/lu';
+import { WiHumidity } from "react-icons/wi";
+import { MdVisibility } from "react-icons/md";
+import { IoCloudSharp } from "react-icons/io5";
 
 
 function Weather() {
@@ -10,6 +13,7 @@ function Weather() {
     const weatherData = data.weather[0];
     const tempData = data.main;
     const windData = data.wind;
+    const visibility = (data.visibility / 1000).toFixed(1);
 
     return (
 
@@ -38,29 +42,31 @@ function Weather() {
 
                 </div>
 
-                <div className='bg-[#ffffff38] rounded-lg flex flex-col justify-center max-w-screen-lg p-4 my-4 sm:m-11 sm:ml-28 lg:p-9'>
+                <div className='bg-[#ffffff38] rounded-lg flex flex-col justify-center max-w-screen-lg sm:p-4 my-4 sm:m-11 sm:ml-28 lg:p-9'>
                     <Weatherdetails
-                        icon={<LuWind />}
+                        icon={<LuWind/>}
                         title={"Wind"}
                         detail={`${windData.speed} m/s`}
                     />
                     <hr />
                     <Weatherdetails
-                        icon={<LuWind />}
-                        title={"Wind"}
-                        detail={`${windData.speed} m/s`}
+                        icon={<WiHumidity 
+                        className='text-xl'
+                        />}
+                        title={"Humidity"}
+                        detail={`${tempData.humidity} %`}
                     />
                     <hr />
                     <Weatherdetails
-                        icon={<LuWind />}
-                        title={"Wind"}
-                        detail={`${windData.speed} m/s`}
+                        icon={<MdVisibility />}
+                        title={"Visibility"}
+                        detail={`${visibility} km`}
                     />
                     <hr />
                     <Weatherdetails
-                        icon={<LuWind />}
-                        title={"Wind"}
-                        detail={`${windData.speed} m/s`}
+                        icon={<IoCloudSharp />}
+                        title={"Cloudiness"}
+                        detail={`${data.clouds.all} %`}
                     />
                 </div>
             </div>
