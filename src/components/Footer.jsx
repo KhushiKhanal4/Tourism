@@ -30,8 +30,8 @@ function Footer() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/Stay" className="hover:underline">
-                                        Stay
+                                    <Link to="/Weather" className="hover:underline">
+                                        Weather
                                     </Link>
                                 </li>
                             </ul>
