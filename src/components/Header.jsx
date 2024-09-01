@@ -20,7 +20,7 @@ function Header() {
                     <div className="flex items-center md:order-2 ">
 
                         <Link
-                            to="#"
+                            to="/PlacesToVisit"
                             className="hidden text-yellow-100 bg-emerald-800 hover:bg-emerald-600 sm:block focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
                         >
                             Search
@@ -29,10 +29,10 @@ function Header() {
                     </div>
 
                     <div
-                        className=" justify-between  items-center w-full md:flex md:w-auto md:order-1"
+                        className=" justify-between items-center w-full md:flex md:w-auto md:order-1 ml-5"
                         id="mobile-menu-2"
                     >
-                        <ul className="flex mt-4  text-xs min-[340px]:text-sm md:text-lg font-medium  md:space-x-10 lg:mt-0">
+                        <ul className="flex mt-4  text-xs min-[340px]:text-sm  md:text-lg font-medium  md:space-x-10 lg:mt-0">
                             <li>
                                 <NavLink
                                     className={() =>

@@ -13,13 +13,14 @@ function Weather() {
     const weatherData = data.weather[0];
     const tempData = data.main;
     const windData = data.wind;
-    const visibility = (data.visibility / 1000).toFixed(1);
+    const visibility = Math.floor(data.visibility / 1000);
+    
 
     return (
 
         <div className='bg-gradient-to-tr from-green-400 to-teal-600 '>
 
-            <h2 className='font-medium font-sans text-sm text-black text-shadow-md p-3 sm:py-5 sm:text-lg'>CURRENT WEATHER </h2>
+            <h2 className='font-medium font-sans text-sm text-white text-shadow-md p-3 sm:py-5 sm:text-lg'>CURRENT WEATHER </h2>
 
             <hr className='w-full ' />
 
@@ -58,13 +59,17 @@ function Weather() {
                     />
                     <hr />
                     <Weatherdetails
-                        icon={<MdVisibility />}
+                        icon={<MdVisibility
+                            className='text-xl'
+                             />}
                         title={"Visibility"}
                         detail={`${visibility} km`}
                     />
                     <hr />
                     <Weatherdetails
-                        icon={<IoCloudSharp />}
+                        icon={<IoCloudSharp 
+                            className='text-xl'
+                            />}
                         title={"Cloudiness"}
                         detail={`${data.clouds.all} %`}
                     />

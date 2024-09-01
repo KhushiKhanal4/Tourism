@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Home() {
     return (
@@ -16,12 +17,15 @@ function Home() {
             </div>
 
             <div className='text-sm font-normal my-8 mx-3 text-center font-Kanit text-gray-700 sm:mx-6 md:text-md lg:text-lg '>
-                <p> Bali, often called the Island of the Gods, is a tropical paradise known for its stunning beaches, lush landscapes, and rich cultural heritage. From the serene rice terraces of Ubud to the vibrant surf spots of Kuta, Bali offers something for every traveler. With its warm hospitality, captivating temples, and a blend of relaxation and adventure, Bali is a must-visit destination for those seeking a unique and unforgettable experience.
+                <p className='pb-9'> Bali, often called the Island of the Gods, is a tropical paradise known for its stunning beaches, lush landscapes, and rich cultural heritage. From the serene rice terraces of Ubud to the vibrant surf spots of Kuta, Bali offers something for every traveler. With its warm hospitality, captivating temples, and a blend of relaxation and adventure, Bali is a must-visit destination for those seeking a unique and unforgettable experience.
                 </p>
 
-                <button className='bg-emerald-700 rounded-lg p-2 px-3 m-3 text-white'>
-                    Explore
-                </button>
+                
+                <Link
+                to="/PlacesToVisit"
+                className='bg-emerald-700 rounded-lg p-2 px-3  text-white'>
+                Explore
+                </Link>
             </div>
 
         </>

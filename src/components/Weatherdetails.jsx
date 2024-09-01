@@ -14,7 +14,7 @@ function Weatherdetails({
               
                 <h1 className='text-white font-Kanit font-semibold text-lg tracking-widest text-shadow md:text-md'>{title}</h1>
                
-                <p className='text-white font-Kanit font-semibold text-lg tracking-widest text-shadow'>{detail}</p>
+                <p className='text-white font-Kanit font-semibold text-md tracking-widest text-shadow'>{detail}</p>
             </div>
         
     )
